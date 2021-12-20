@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgb(83, 101, 209);
+  background: linear-gradient(
+    90deg,
+    rgba(83, 101, 209, 1) 34%,
+    rgba(171, 83, 208, 1) 88%
+  );
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.p-text {
+  font-family: Helvetica, sans-serif;
+  color: #f4f4f4;
+  padding-bottom: 1rem;
+}
+
+.primary-btn {
+  background: #fff;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.primary-btn-text {
+  background: linear-gradient(
+    90deg,
+    rgba(63, 81, 189, 1) 34%,
+    rgba(167, 63, 188, 1) 88%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.close-btn-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.material-icons-outlined {
+  font-family: "Material Icons";
+  content: "\e5cd";
+  position: relative;
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+    flex-basis: 90%;
+  }
+
+  .close-btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .p-text {
+    padding-bottom: 0rem;
+    padding: 0 1rem;
+  }
+
+  .primary-btn {
+    max-width: 8rem;
+  }
+}
