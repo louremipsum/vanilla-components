@@ -1,7 +1,7 @@
 /* TODO:  */
 
 .mains{
-    display: block;
+    display: none;
     z-index: 1;
 }
 .button{
@@ -19,7 +19,14 @@
 .button:hover{
     background:#e7e5e4;
     cursor: pointer;
+    transition: all 0.2s;
 }
+
+.button:active{
+    background: #d6d3d1;
+    cursor: pointer;
+}
+
 .t-area{
     display: flex;
     justify-content: center;
