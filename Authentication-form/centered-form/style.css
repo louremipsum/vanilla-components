@@ -8,7 +8,13 @@
 
 .logo {
   text-align: center;
+  margin: 1rem;
+  padding: 0.5rem;
 }
+/* #logo-img{
+   font-size: 4rem;
+} 
+  */
 body {
   background-color: #f0f9ff;
   font-family: "Inter", sans-serif;
