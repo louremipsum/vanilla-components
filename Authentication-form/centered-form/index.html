@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +16,55 @@
 
 <body>
     <div class="logo">
-        <img src="logoipsum-logo-5.svg" alt="Logo">
-    </div>
-    <div class="upper-text">
-        <h1>Sign in to your account</h1>
-        <p>Don't have an account? <a class="link" href="#">Start free trial</a></p>
-    </div>
-    <div class="login">
-        <form>
-        <p>Email address</p>
-        <input type="text" placeholder="abc@xyz.com"/>
-    </form>
+        <img src="/Authentication-form/centered-form/assets/Logo.svg" alt="Logo">
     </div>
 
+    <div class="heading-text">
+        <h1>Sign in to your account</h1>
+        <p id="h-2">Don't have an account? <a class="link" href="#">Start free trial</a></p>
+    </div>
+
+    <div class="main">
+        <div class="white-box">
+            <div class="email-component">
+                <div class="heading">
+                    <p class="text">Email address</p>
+                </div>
+                <input type="text" class="text-area" placeholder="abc@xyz.com" />
+            </div>
+
+            <div class="password-component">
+                <div class="heading">
+                    <p class="text">Password</p>
+                    <a href="#" id="link-pw">Forgot Password?</a>
+                </div>
+                <div>
+                <input type="password" id="typepass" class="text-area" />
+            
+                <div class="btn-visibility" onclick="Toggle()"> 
+                    <span id='visibility' class="hide">
+                        visibility
+                    </span>
+                </div>
+                </div>
+            </div>
+
+            <div class="button">Sign in</div>
+
+            <div class="divider-toSocials"><span>or continue with</span></div>
+
+            <div class="socials">
+                <div class="button-social"><img src="/Authentication-form/centered-form/assets/FB-social.svg"
+                        alt="facebook" width="20rem" height="20rem" /></div>
+                <div class="button-social"><img src="/Authentication-form/centered-form/assets/google-social.svg"
+                        alt="Google" width="20rem" height="20rem" /></div>
+                <div class="button-social"><img src="/Authentication-form/centered-form/assets/github-social.svg"
+                        alt="Github" width="20rem" height="20rem" /></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
