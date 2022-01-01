@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CheckOut</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="side left">
+            <h2 class="heading">Shipping Information</h2>
+            <div class="unit">
+                <p class="heading-info">Full Name</p>
+                <input type="text" class="text-area" placeholder="Your first and last name" />
+            </div>
+            <div class="unit">
+                <p class="heading-info">Street address</p>
+                <input type="text" class="text-area" placeholder="123 Example Street" />
+            </div>
+            <div class="unit-loca">
+                <div>
+                    <p class="heading-info">Zip Code</p>
+                    <input type="number" class="text-area zip" placeholder="Zip Code" />
+                </div>
+                <div>
+                    <p class="heading-info">City</p>
+                    <input type="text" class="text-area city" placeholder="City" />
+                </div>
+            </div>
+            <div class="unit">
+                <p class="heading-info">Email</p>
+                <input type="email" class="text-area" placeholder="you@example.com" />
+            </div>
+
+            <div class="checkmark" onclick="Toggle()">
+                <input type="checkbox">
+                <span class="check" id="checking"  value="show">
+                    check_box_outline_blank
+                </span>
+                Billing address is same as shipping address
+            </div>
+            
+            <div id="Billing">
+                <h2 class="heading">Billing address</h2>
+                <div class="unit">
+                    <p class="heading-info">Full Name</p>
+                    <input type="text" class="text-area" placeholder="Your first and last name" />
+                </div>
+                <div class="unit">
+                    <p class="heading-info">Street address</p>
+                    <input type="text" class="text-area" placeholder="123 Example Street" />
+                </div>
+                <div class="unit-loca">
+                    <div>
+                        <p class="heading-info">Zip Code</p>
+                        <input type="number" class="text-area zip" placeholder="Zip Code" />
+                    </div>
+                    <div>
+                        <p class="heading-info">City</p>
+                        <input type="text" class="text-area city" placeholder="City" />
+                    </div>
+                </div>
+                <div class="unit">
+                    <p class="heading-info">Email</p>
+                    <input type="email" class="text-area" placeholder="you@example.com" />
+                </div>
+            </div>
+        </div>
+
+        <div class="side right">
+            <h2 class="heading">Order Summary</h2>
+            <div class="product">
+                <div>
+                    <img src="assets/photo-1.jpg" alt="Bamboo Tan" height="104px" width="104px">
+                </div>
+                <div class="product-info">
+                    <div class="details">
+
+                        <strong class="heading">Bamboo Tan</strong>
+
+
+                        <p>Size: 20</p>
+
+
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                    </div>
+                    <div><strong>$199</strong></div>
+                </div>
+            </div>
+            <hr class="solid-divider">
+            <div class="product">
+                <div>
+                    <img src="assets/photo-2.jpg" alt="Iconic Turquoise" height="104px" width="104px">
+                </div>
+                <div class="product-info">
+                    <div class="details">
+
+                        <strong class="heading">Iconic Turquoise</strong>
+
+
+                        <p>Size: 20</p>
+
+
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+
+                    </div>
+                    <div><strong>$199</strong></div>
+                </div>
+            </div>
+            <hr class="solid-divider">
+
+            <div class="discount">
+                <div>
+                    <input type="text" class="text-area disCode" placeholder="Discount Code" />
+                </div>
+                <div class="button">Apply</div>
+            </div>
+            <div class="cost">
+                <div class="sub-cost">
+                    <div>Subtotal</div>
+                    <div>$597.00</div>
+                </div>
+                <div class="sub-cost">
+                    <div>Shipping cost</div>
+                    <div>+$24.99</div>
+                </div>
+                <div class="sub-cost">
+                    <div>Discount (20%)</div>
+                    <div><span> -$20.00</span></div>
+                </div>
+                <hr class="solid-divider">
+                <div class="sub-cost total">
+                    <div>Order Total</div>
+                    <div>$597.00</div>
+                </div>
+            </div>
+            <div class="lower-stack">
+                <div class="button order">Place Order</div>
+                <div class="contact">
+                    <p>Have questions? or Need help to complete your order?</p>
+                    <div class="contact-icons">
+                        <div class="icon">
+                            <span class="i-chat">
+                                textsms
+                            </span>
+                            <p>Live Chat</p>
+                        </div>
+                        <div class="icon">
+                            <span class="i-call">
+                                call
+                            </span>
+                            <p>Phone</p>
+                        </div>
+                        <div class="icon">
+                            <span class="i-email">
+                                mail_outline
+                            </span>
+                            <p>Email</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
