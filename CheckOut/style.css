@@ -233,6 +233,26 @@ span{
    color: #0284c7;
    margin-left: 0.25rem;
 }
+
+.ship-method{
+    margin-top: 5rem;
+}
+
+.radio{
+    /* radio_button_checked */
+    font-family: "Material Icons";
+    content: "\e837";
+    color: #0284c7;
+    font-size: 1.5rem;
+}
+.un-radio{
+    /* radio_button_unchecked */
+    font-family: "Material Icons";
+    content: "\e836";
+    color: #0284c7;
+    font-size: 1.5rem;
+}
+
 .i-chat{
     font-family: "Material Icons";
     content: "\e0d8";
@@ -253,9 +273,3 @@ span{
     font-size: 1.5rem;
     
 }
-
-/* .show {
-    font-family: "Material Icons";
-    content: "\e8f4";
-    font-size: 1.25rem;
-} */
