@@ -1,0 +1,25 @@
+/* .card-signIn{
+    border-radius: 8px;
+    width: 16rem;
+    height: 20rem;
+    background: grey;
+} */
+/* nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+} */
+.card{
+    height: 2rem;
+    border-radius: 4px;
+    color: #374151;
+    background: #f3f4f6;
+    margin: 1rem;
+}
+.card:hover{
+    background: #d1d5db;
+}
+.compo-cards{
+    display: flex;
+    flex-wrap: wrap;    
+}

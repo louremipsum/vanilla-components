@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -56,6 +61,7 @@ nav {
   /* margin: 0 0.5rem; */
   text-align: center;
   font-weight: bold;
+  text-decoration: none;
   color: white;
 }
 
@@ -79,11 +85,52 @@ nav {
 }
 .main-text a {
   font-weight: 500;
-  margin: 1rem 0;
+  margin: 3rem 0;
   font-size: 1.5rem;
-  text-decoration: none;
+  text-decoration: underline;
   color: #fff;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
+/* .git-css {
+  animation: move 4s ease 0s infinite none none;
+} */
+
+@keyframes move {
+  0% {
+    font-size: 1.5rem;
+  }
+  10% {
+    font-size: 1.52rem;
+  }
+  20% {
+    font-size: 1.54rem;
+  }
+  30% {
+    font-size: 1.56rem;
+  }
+  40% {
+    font-size: 1.58rem;
+  }
+  50% {
+    font-size: 1.6rem;
+  }
+  60% {
+    font-size: 1.58rem;
+  }
+  70% {
+    font-size: 1.56rem;
+  }
+  80% {
+    font-size: 1.54rem;
+  }
+  100% {
+    font-size: 1.52rem;
+  }
+}
+
 .main-text h1 {
   margin: 1rem 0;
   font-weight: 800;
@@ -102,8 +149,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-.p-text{
-    color: white;
-    margin-left: 0.5rem;
+.p-text {
+  color: white;
+  margin-left: 0.5rem;
 }
-
